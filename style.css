@@ -6,6 +6,7 @@ h1 {
 
 section {
   text-align: center;
+  display: inline-block;
 }
 
 article {
