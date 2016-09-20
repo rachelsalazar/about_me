@@ -1,14 +1,22 @@
 h1 {
-  color:
+  color: grey;
+  font-size: 16px;
+  padding-left: 60px;
+}
+
+section {
+  text-align: center;
 }
 
 article {
   display: inline-block;
 }
 
-section img {
-  height: 200px;
-  padding-right: 50px;
+article img {
+  height: 150px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 15%;
 }
 
 .bio {
