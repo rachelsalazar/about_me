@@ -8,38 +8,32 @@ alert('Hello ' + username + '. My name is Rachel, and I have a guessing game for
 //asking the user how long i've been coding
 var codingYears = prompt('I\'ve been coding for 3 years. Yes or No?');
 var codingYearsUpper = codingYears.toUpperCase();
-console.log('The user\'s answer was ' + codingYearsUpper);
+console.log('The user\'s answer to if I\'ve been coding for 3 years was ' + codingYearsUpper);
 
 if (codingYearsUpper === 'N' || codingYearsUpper === 'NO') {
   alert('YOU\'RE CORRECT! I have only been coding for about 2 months.');
 } else {
-  alert('Sorry, I know my code looks good. But I\'m not a coding master yet.');
+  alert('Sorry, I\'ve actually only been coding for about 2 months!');
 };
-console.log(codingYearsUpper);
 
-//asking the user
-var codingYears = prompt('I\'ve been coding for 3 years. Yes or No? ');
-var codingYearsUpper = codingYears.toUpperCase();
-console.log('The user\'s answer was ' + codingYearsUpper);
+//asking the user where I live
+var myResidence = prompt('I live in Seattle, WA. Yes or no?');
+var myResidenceUpper = myResidence.toUpperCase();
+console.log('The user\'s answer to if I live in Seattle was ' + myResidenceUpper);
 
-if (codingYearsUpper === 'N' || codingYearsUpper === 'NO') {
-  alert('YOU\'RE CORRECT! I have only been coding for about 2 months.');
+if (myResidenceUpper === 'Y' || myResidenceUpper === 'YES') {
+  alert('Great job. I have lived here in Seattle a little over a year.');
 } else {
-  alert('Sorry, I know my code looks good. But I\'m not a coding master yet.');
+  alert('You\'re wrong!:( But partially right... I would like to move to New York.');
 };
-console.log(codingYearsUpper);
 
-/* console.log('The user\'s name is ' + username);
-alert('Hello ' + username + '. So, I want to play a little guessing game with you. Let\'s see how well you know me.');
+//asking the user if i want a dog
+var iWantAPuppy = prompt('I really, really, really want a dog. Y or N?');
+var iWantAPuppyUpper = iWantAPuppy.toUpperCase();
+console.log('The user\'s answer to if I want a puppy was ' + iWantAPuppyUpper);
 
-var inputFavoriteAnimal = prompt('');
-console.log('The user\'s favorite animal is a ' + inputFavoriteAnimal);
-alert('Oh my gosh ' + username + ', my favorite animal is also a ' + inputFavoriteAnimal + '!!!');
-
-var inputBirthPlace = prompt('Where were you born?');
-console.log('The user was born in ' + inputBirthPlace);
-alert('So, let me get this right. Your name is ' + username + ', you were born in ' + inputBirthPlace + ', and your favorite animal is a ' + inputFavoriteAnimal + '... Alright, one more question.');
-
-var inputDreamLocation = prompt('If you could travel anywhere, where would it be?');
-console.log('The user want\'s to travel to ' + inputDreamLocation);
-alert('Ok, I have all the info I need. So here is what I came up with. ' + username + ' rode a ' + inputFavoriteAnimal + ' all the way from ' + inputBirthPlace + ' to ' + inputDreamLocation + ". That poor " + inputFavoriteAnimal + '!:(' ); */
+if (iWantAPuppyUpper === 'Y' || iWantAPuppyUpper === 'YES') {
+  alert('DUHHHHHHHHHHHHHHHHH, OF COURSE I DO!!!');
+} else {
+  alert('What is wrong with you? Everyone should want a doggy!');
+};
