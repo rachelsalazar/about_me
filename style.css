@@ -38,7 +38,7 @@ li {
 
 .alignleft li {
   display: block;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .white {
@@ -48,7 +48,7 @@ li {
 article img {
   height: 150px;
   margin: 0;
-  padding-right: 60px;
+  padding-right: 65px;
   padding-left: 60px;
   padding-top: 40%;
 }
