@@ -61,34 +61,88 @@
 // };
 
 //Q#6 guess a number game
-alert('Here is a guessing game. You have 4 tries to get the correct answer. In the next window, please enter your guess of a number between 1 and 10.');
+// alert('Here is a guessing game. You have 4 tries to get the correct answer. In the next window, please enter your guess of a number between 1 and 10.');
+//
+// var randomNumber = Math.floor(Math.random() * 10) + 1;
+// console.log('The correct answer is ' + randomNumber);
+//
+// var numberGuesses = 0;
+// var whileRunCount = 0;
+//
+// while (numberGuesses < 4 && guessNumber !== randomNumber) {
+//   numberGuesses++;
+//   var guessNumber = parseInt(prompt('Enter guess.'));
+//   if (guessNumber !== 1 && guessNumber !== 2 && guessNumber !== 3 && guessNumber !== 4 && guessNumber !== 5 && guessNumber !== 6 && guessNumber !== 7 && guessNumber !== 8 && guessNumber !== 9 && guessNumber !== 10) {
+//     alert('Sorry, that is not a number between 1 and 10.');
+//   };
+//   console.log('The user guessed the number ' + guessNumber);
+//   if (guessNumber < randomNumber) {
+//     alert('Your answer was too low.');
+//   } else if (guessNumber > randomNumber) {
+//     alert('Your answer was too high.')
+//   } else {
+//
+//   };
+//   whileRunCount = whileRunCount + 1;
+//   console.log('The user has guessed ' + whileRunCount + ' time/s.');
+// };
+//
+// if (whileRunCount <= 4) {
+//   alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
+// } else {
+//   alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
+// };
 
-var randomNumber = Math.floor(Math.random() * 10) + 1;
-console.log('The correct answer is ' + randomNumber);
+//Q#7 asking which instruments I play
+alert('Ok, one more guessing game. You have 6 tries to guess at least one instrument I know how to play.');
 
-var numberGuesses = 0;
-whileRunCount = 0;
+var instrument = ['clarinet', 'piano', 'trombone', 'trumpet', 'bells', 'flute', 'bass clarinet'];
 
-while (numberGuesses < 4 && guessNumber !== randomNumber) {
-  numberGuesses++;
-  var guessNumber = parseInt(prompt('Enter guess.'));
-  if (guessNumber !== 1 && guessNumber !== 2 && guessNumber !== 3 && guessNumber !== 4 && guessNumber !== 5 && guessNumber !== 6 && guessNumber !== 7 && guessNumber !== 8 && guessNumber !== 9 && guessNumber !== 10) {
-    alert('Sorry, that is not a number between 1 and 10.');
+var numberGuesses2 = 0;
+var whileRunCount2 = 0;
+
+while (numberGuesses2 < 6 && instrumentGuess !== instrument) {
+  numberGuesses2++;
+  var instrumentGuess = prompt('Enter guess.').toLowerCase();
+  console.log('The user guessed the instrument ' + instrumentGuess );
+  if (instrumentGuess !== instrument) {
+    alert('Sorry, I don\'t know how to play that instrument. Guess again.');
   };
-  console.log('The user guessed the number ' + guessNumber);
-  if (guessNumber < randomNumber) {
-    alert('Your answer was too low.');
-  } else if (guessNumber > randomNumber) {
-    alert('Your answer was too high.')
-  } else {
-
-  };
-  whileRunCount = whileRunCount + 1;
-  console.log('The user has guessed ' + whileRunCount + ' time/s.');
 };
-
-if (whileRunCount <= 4) {
-  alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
-} else {
-  alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
-};
+//   if (guessNumber < randomNumber) {
+//     alert('Your answer was too low.');
+//   } else if (guessNumber > randomNumber) {
+//     alert('Your answer was too high.')
+//   } else {
+//
+//   };
+//   whileRunCount = whileRunCount + 1;
+//   console.log('The user has guessed ' + whileRunCount + ' time/s.');
+// };
+//
+// if (whileRunCount <= 4) {
+//   alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
+// } else {
+//   alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
+// };
+//
+//
+//
+// var guessInstrument = prompt('What is an instrument you think I play?').toLowerCase();
+//
+// for (i = 0; i < 7; i++) {
+//
+// };
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
