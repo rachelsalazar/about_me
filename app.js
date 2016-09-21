@@ -67,6 +67,7 @@ var randomNumber = Math.floor(Math.random() * 10) + 1;
 console.log('The correct answer is ' + randomNumber);
 
 var numberGuesses = 0;
+whileRunCount = 0;
 
 while (numberGuesses < 4 && guessNumber !== randomNumber) {
   numberGuesses++;
@@ -82,4 +83,12 @@ while (numberGuesses < 4 && guessNumber !== randomNumber) {
   } else {
 
   };
-}
+  whileRunCount = whileRunCount + 1;
+  console.log('The user has guessed ' + whileRunCount + ' time/s.');
+};
+
+if (whileRunCount <= 4) {
+  alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
+} else {
+  alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
+};
