@@ -12,7 +12,7 @@ body {
 
 h1 {
   font-family: "Arial";
-  color: grey;
+  color: #F6BD9B;
   font-size: 30px;
   margin: 0;
   padding-top: 30px;
@@ -32,6 +32,10 @@ li {
   margin: 0;
 }
 
+.white {
+  color: #F7F7EF;
+}
+
 article img {
   height: 150px;
   margin: 0;
@@ -42,4 +46,8 @@ article img {
 
 h3{
   font-size: 30px;
+}
+
+p {
+  width: 250px;
 }
