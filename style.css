@@ -27,9 +27,18 @@ ul {
   margin: 0;
 }
 
+ul .alignleft {
+  text-align: left;
+}
+
 li {
   display: inline-block;
   margin: 0;
+}
+
+.alignleft li {
+  display: block;
+  padding-left: 30px;
 }
 
 .white {
