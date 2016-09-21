@@ -115,41 +115,4 @@ while (guesses < 6 && guessing) {
 
 if (guesses >= 6) {
   alert('Wow, you\'re really talented to have not guessed any of the instraments right... The list of instruments I know how to play are ' + instrument + '.');
-}
-//   if (guessNumber < randomNumber) {
-//     alert('Your answer was too low.');
-//   } else if (guessNumber > randomNumber) {
-//     alert('Your answer was too high.')
-//   } else {
-//
-//   };
-//   whileRunCount = whileRunCount + 1;
-//   console.log('The user has guessed ' + whileRunCount + ' time/s.');
-// };
-//
-// if (whileRunCount <= 4) {
-//   alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
-// } else {
-//   alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
-// };
-//
-//
-//
-// var guessInstrument = prompt('What is an instrument you think I play?').toLowerCase();
-//
-// for (i = 0; i < 7; i++) {
-//
-// };
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
