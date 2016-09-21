@@ -60,3 +60,8 @@ h3{
 p {
   width: 250px;
 }
+
+footer {
+  padding-top: 10%;
+  float: right;
+}
