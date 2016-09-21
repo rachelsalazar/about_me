@@ -96,19 +96,26 @@
 //Q#7 asking which instruments I play
 alert('Ok, one more guessing game. You have 6 tries to guess at least one instrument I know how to play.');
 
+var guesses= 0;
+var guessing = true;
 var instrument = ['clarinet', 'piano', 'trombone', 'trumpet', 'bells', 'flute', 'bass clarinet'];
 
-var numberGuesses2 = 0;
-var whileRunCount2 = 0;
-
-while (numberGuesses2 < 6 && instrumentGuess !== instrument) {
-  numberGuesses2++;
+while (guesses < 6 && guessing) {
+  guesses++
+  console.log('The user has guessed ' + guesses + ' times.');
   var instrumentGuess = prompt('Enter guess.').toLowerCase();
-  console.log('The user guessed the instrument ' + instrumentGuess );
-  if (instrumentGuess !== instrument) {
-    alert('Sorry, I don\'t know how to play that instrument. Guess again.');
-  };
+  for (var i = 0; i < instrument.length; i++ ) {
+    if (instrumentGuess === instrument[i]) {
+      alert('Yo, you got it right.');
+      guessing = false;
+    }
+    console.log('The user guessed the instrument ' + instrumentGuess );
+  }
 };
+
+if (guesses >= 6) {
+  alert('Wow, you\'re really talented to have not guessed any of the instraments right... The list of instruments I know how to play are ' + instrument + '.');
+}
 //   if (guessNumber < randomNumber) {
 //     alert('Your answer was too low.');
 //   } else if (guessNumber > randomNumber) {
