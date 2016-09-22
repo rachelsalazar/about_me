@@ -1,5 +1,8 @@
 'use strict';
 
+//scoring the game
+var score = 0;
+
 // asking the user's name
 var username = prompt('First off, what is your name?');
 console.log('The user\'s name is ' + username);
@@ -12,8 +15,11 @@ console.log('The user\'s answer to if I\'ve been coding for 3 years was ' + codi
 
 if (codingYears === 'N' || codingYears === 'NO') {
   alert('YOU\'RE CORRECT! I have only been coding for about 2 months.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
   alert('Sorry, I\'ve actually only been coding for about 2 months!');
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 //Q#2 asking the user where I live
@@ -23,8 +29,11 @@ console.log('The user\'s answer to if I live in Seattle was ' + myResidence);
 
 if (myResidence === 'Y' || myResidence === 'YES') {
   alert('Great job. I have lived here in Seattle a little over a year.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
   alert('You\'re wrong!:( But partially right... I would like to move to New York.');
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 //Q#3 asking the user if i want a dog
@@ -34,34 +43,43 @@ console.log('The user\'s answer to if I want a puppy was ' + iWantAPuppy);
 
 if (iWantAPuppy === 'Y' || iWantAPuppy === 'YES') {
   alert('DUHHHHHHHHHHHHHHHHH, OF COURSE I DO!!!');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
   alert('What is wrong with you? Everyone should want a doggy!');
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 //Q#4 asking the user if I walk to school
 var rideTheBus = prompt('I walk to school. Yes or No? Y or N?');
 rideTheBus = rideTheBus.toUpperCase();
-console.log('The user\'s answer to if I want a puppy was ' + rideTheBus);
+console.log('The user\'s answer to if I ride the bus is ' + rideTheBus);
 
 if (rideTheBus === 'N' || rideTheBus === 'NO') {
   alert('Correct, correct, correct. I take the bus or my hubby drops me off.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
   alert('NO! I ain\'t walking from Ballard!');
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 //Q# 5asking the user if I am tired of thinking of questions to ask
-var enoughQuestionsAlready = prompt('I am tired of thinking of questions to ask you. Yes or No? Y or N?');
-enoughQuestionsAlready = enoughQuestionsAlready.toUpperCase();
-console.log('The user\'s answer to if I want a puppy was ' + enoughQuestionsAlready);
+var numberToes = prompt('I have 6 toes on each foot. Yes or No? Y or N?');
+numberToes = numberToes.toUpperCase();
+console.log('The user\'s answer to how many toes I have is ' + numberToes);
 
-if (enoughQuestionsAlready === 'Y' || enoughQuestionsAlready === 'YES') {
-  alert('YESSSS!! Thank goodness we are done! Now check out my portfolio.');
+if (numberToes === 'Y' || numberToes === 'YES') {
+  alert('Um... no. I only have 10 total.');
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
-  alert('i. have. no. more. questions. Just go check out my portfolio page. Thanks for playing!!!');
+  alert('I\'m normal... Only 10 toes.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 // Q#6 guess a number game
-alert('Here is a guessing game. You have 4 tries to get the correct answer. In the next window, please enter your guess of a number between 1 and 10.');
+alert('Alright, here is a guessing game. You have 4 tries to get the correct answer. In the next window, please enter your guess of a number between 1 and 10.');
 
 var randomNumber = Math.floor(Math.random() * 10) + 1;
 console.log('The correct answer is ' + randomNumber);
@@ -89,8 +107,11 @@ while (numberGuesses < 4 && guessNumber !== randomNumber) {
 
 if (whileRunCount <= 4) {
   alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
 } else {
   alert('Better luck next time. The correct answer was ' + ' ' + randomNumber);
+  console.log('The user\'s score is ' + score + '/7.');
 };
 
 //Q#7 asking which instruments I play
@@ -106,7 +127,9 @@ while (guesses < 6 && guessing) {
   var instrumentGuess = prompt('Enter guess.').toLowerCase();
   for (var i = 0; i < instrument.length; i++ ) {
     if (instrumentGuess === instrument[i]) {
-      alert('Yo, you got it right.');
+      alert('Yo, you got it right. I play ' + instrument + '.');
+      score = score + 1;
+      console.log('The user\'s score is ' + score + '/7.');
       guessing = false;
     }
     console.log('The user guessed the instrument ' + instrumentGuess );
@@ -114,5 +137,14 @@ while (guesses < 6 && guessing) {
 };
 
 if (guesses >= 6) {
-  alert('Wow, you\'re really talented to have not guessed any of the instraments right... The list of instruments I know how to play are ' + instrument + '.');
+  alert('Wow, you\'re really talented to have not guessed any of the instruments right... The list of instruments I know how to play are ' + instrument + '.');
+  console.log('The user\'s score is ' + score + '/7.');
+};
+
+var percent = Math.floor((score / 7) * 100);
+
+if (percent > 0.5) {
+  alert('Great JOB ' + username + '!!!!!!!! You got ' + score + ' out of the 7 questions correct. That\'s %' + percent + '.');
+} else {
+  alert('Man, ' + username + ' you didn\'t do too well. You got ' + score + ' out of 7. That\'s only %' + percent + '!! Better luck next time!');
 };
