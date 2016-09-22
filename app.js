@@ -1,82 +1,82 @@
 'use strict';
-//
-// //scoring the game
-// var score = 0;
-//
-// // asking the user's name
-// var username = prompt('First off, what is your name?');
-// console.log('The user\'s name is ' + username);
-// alert('Hello ' + username + '. My name is Rachel, and I have a guessing game for you.');
-//
-// //Q#1 asking the user how long i've been coding
-// var codingYears = prompt('I\'ve been coding for 3 years. Yes or No? Y or N?');
-// codingYears = codingYears.toUpperCase();
-// console.log('The user\'s answer to if I\'ve been coding for 3 years was ' + codingYears);
-//
-// if (codingYears === 'N' || codingYears === 'NO') {
-//   alert('YOU\'RE CORRECT! I have only been coding for about 2 months.');
-//   score = score + 1;
-//   console.log('The user\'s score is ' + score + '/7.');
-// } else {
-//   alert('Sorry, I\'ve actually only been coding for about 2 months!');
-//   console.log('The user\'s score is ' + score + '/7.');
-// };
-//
-// //Q#2 asking the user where I live
-// var myResidence = prompt('I live in Seattle, WA. Yes or no? Y or N?');
-// myResidence = myResidence.toUpperCase();
-// console.log('The user\'s answer to if I live in Seattle was ' + myResidence);
-//
-// if (myResidence === 'Y' || myResidence === 'YES') {
-//   alert('Great job. I have lived here in Seattle a little over a year.');
-//   score = score + 1;
-//   console.log('The user\'s score is ' + score + '/7.');
-// } else {
-//   alert('You\'re wrong!:( But partially right... I would like to move to New York.');
-//   console.log('The user\'s score is ' + score + '/7.');
-// };
-//
-// //Q#3 asking the user if i want a dog
-// var iWantAPuppy = prompt('I really, really, really want a dog. Yes or No? Y or N?');
-// iWantAPuppy = iWantAPuppy.toUpperCase();
-// console.log('The user\'s answer to if I want a puppy was ' + iWantAPuppy);
-//
-// if (iWantAPuppy === 'Y' || iWantAPuppy === 'YES') {
-//   alert('DUHHHHHHHHHHHHHHHHH, OF COURSE I DO!!!');
-//   score = score + 1;
-//   console.log('The user\'s score is ' + score + '/7.');
-// } else {
-//   alert('What is wrong with you? Everyone should want a doggy!');
-//   console.log('The user\'s score is ' + score + '/7.');
-// };
-//
-// //Q#4 asking the user if I walk to school
-// var rideTheBus = prompt('I walk to school. Yes or No? Y or N?');
-// rideTheBus = rideTheBus.toUpperCase();
-// console.log('The user\'s answer to if I ride the bus is ' + rideTheBus);
-//
-// if (rideTheBus === 'N' || rideTheBus === 'NO') {
-//   alert('Correct, correct, correct. I take the bus or my hubby drops me off.');
-//   score = score + 1;
-//   console.log('The user\'s score is ' + score + '/7.');
-// } else {
-//   alert('NO! I ain\'t walking from Ballard!');
-//   console.log('The user\'s score is ' + score + '/7.');
-// };
-//
-// //Q# 5asking the user if I am tired of thinking of questions to ask
-// var numberToes = prompt('I have 6 toes on each foot. Yes or No? Y or N?');
-// numberToes = numberToes.toUpperCase();
-// console.log('The user\'s answer to how many toes I have is ' + numberToes);
-//
-// if (numberToes === 'Y' || numberToes === 'YES') {
-//   alert('Um... no. I only have 10 total.');
-//   console.log('The user\'s score is ' + score + '/7.');
-// } else {
-//   alert('I\'m normal... Only 10 toes.');
-//   score = score + 1;
-//   console.log('The user\'s score is ' + score + '/7.');
-// };
+
+//scoring the game
+var score = 0;
+
+// asking the user's name
+var username = prompt('First off, what is your name?');
+console.log('The user\'s name is ' + username);
+alert('Hello ' + username + '. My name is Rachel, and I have a guessing game for you.');
+
+//Q#1 asking the user how long i've been coding
+var codingYears = prompt('I\'ve been coding for 3 years. Yes or No? Y or N?');
+codingYears = codingYears.toUpperCase();
+console.log('The user\'s answer to if I\'ve been coding for 3 years was ' + codingYears);
+
+if (codingYears === 'N' || codingYears === 'NO') {
+  alert('YOU\'RE CORRECT! I have only been coding for about 2 months.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
+} else {
+  alert('Sorry, I\'ve actually only been coding for about 2 months!');
+  console.log('The user\'s score is ' + score + '/7.');
+};
+
+//Q#2 asking the user where I live
+var myResidence = prompt('I live in Seattle, WA. Yes or no? Y or N?');
+myResidence = myResidence.toUpperCase();
+console.log('The user\'s answer to if I live in Seattle was ' + myResidence);
+
+if (myResidence === 'Y' || myResidence === 'YES') {
+  alert('Great job. I have lived here in Seattle a little over a year.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
+} else {
+  alert('You\'re wrong!:( But partially right... I would like to move to New York.');
+  console.log('The user\'s score is ' + score + '/7.');
+};
+
+//Q#3 asking the user if i want a dog
+var iWantAPuppy = prompt('I really, really, really want a dog. Yes or No? Y or N?');
+iWantAPuppy = iWantAPuppy.toUpperCase();
+console.log('The user\'s answer to if I want a puppy was ' + iWantAPuppy);
+
+if (iWantAPuppy === 'Y' || iWantAPuppy === 'YES') {
+  alert('DUHHHHHHHHHHHHHHHHH, OF COURSE I DO!!!');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
+} else {
+  alert('What is wrong with you? Everyone should want a doggy!');
+  console.log('The user\'s score is ' + score + '/7.');
+};
+
+//Q#4 asking the user if I walk to school
+var rideTheBus = prompt('I walk to school. Yes or No? Y or N?');
+rideTheBus = rideTheBus.toUpperCase();
+console.log('The user\'s answer to if I ride the bus is ' + rideTheBus);
+
+if (rideTheBus === 'N' || rideTheBus === 'NO') {
+  alert('Correct, correct, correct. I take the bus or my hubby drops me off.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
+} else {
+  alert('NO! I ain\'t walking from Ballard!');
+  console.log('The user\'s score is ' + score + '/7.');
+};
+
+//Q# 5asking the user if I am tired of thinking of questions to ask
+var numberToes = prompt('I have 6 toes on each foot. Yes or No? Y or N?');
+numberToes = numberToes.toUpperCase();
+console.log('The user\'s answer to how many toes I have is ' + numberToes);
+
+if (numberToes === 'Y' || numberToes === 'YES') {
+  alert('Um... no. I only have 10 total.');
+  console.log('The user\'s score is ' + score + '/7.');
+} else {
+  alert('I\'m normal... Only 10 toes.');
+  score = score + 1;
+  console.log('The user\'s score is ' + score + '/7.');
+};
 
 // Q#6 guess a number game
 alert('Alright, here is a guessing game. You have 4 tries to get the correct answer. In the next window, please enter your guess of a number between 1 and 10.');
