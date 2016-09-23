@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background: url(background.jpeg) no-repeat center center fixed;
+  background: url(background.jpeg) no-repeat center center;
   background-size: cover;
   margin: 0;
   text-align: center;
@@ -39,10 +39,6 @@ li {
 .alignleft li {
   display: block;
   padding-left: 25px;
-}
-
-.white {
-  color: #F7F7EF;
 }
 
 article img {
