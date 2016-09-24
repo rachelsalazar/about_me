@@ -121,6 +121,7 @@ function answerSix() {
     console.log('The user has guessed ' + whileRunCount + ' time/s.');
   }
 
+
   if (guessNumber === randomNumber) {
     alert('Congrats!!! You guessed the right answer, which was ' + ' ' + randomNumber + '.');
     score = score + 1;
@@ -131,6 +132,7 @@ function answerSix() {
   }
 }
 answerSix();
+
 //Q#7 asking which instruments I play
 function answerSeven() {
   alert('Ok, one more guessing game. You have 6 tries to guess at least one instrument I know how to play.');
@@ -152,19 +154,20 @@ function answerSeven() {
       }
       console.log('The user guessed the instrument ' + instrumentGuess );
     }
-  };
-
+  }
   if (guesses >= 6) {
     alert('Wow, you\'re really talented to have not guessed any of the instruments right... The list of instruments I know how to play are ' + instrument + '.');
     console.log('The user\'s score is ' + score + '/7.');
   };
+};
 
-  var percent = Math.floor((score / 7) * 100);
 
-  if (percent > 0.5) {
-    alert('Great JOB ' + username + '!!!!!!!! You got ' + score + ' out of the 7 questions correct. That\'s %' + percent + '.');
-  } else {
-    alert('Man, ' + username + ' you didn\'t do too well. You got ' + score + ' out of 7. That\'s only %' + percent + '!! Better luck next time!');
-  };
-}
 answerSeven();
+
+var percent = Math.floor((score / 7) * 100);
+
+if (percent > 50) {
+  alert('Great JOB ' + username + '!!!!!!!! You got ' + score + ' out of the 7 questions correct. That\'s ' + percent + '%.');
+} else {
+  alert('Man, ' + username + ' you didn\'t do too well. You got ' + score + ' out of 7. That\'s only ' + percent + '%!! Better luck next time!');
+};
