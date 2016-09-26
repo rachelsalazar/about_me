@@ -23,7 +23,6 @@ section {
 }
 
 ul {
-  list-style: none;
   margin: 0;
 }
 
@@ -60,11 +59,11 @@ p {
   position: relative;
 }
 
-.ol {
+ol {
   position: relative;
   width: 200px;
   margin-left: auto;
-  margin-right: auzto;
+  margin-right: auto;
 }
 
 footer {
